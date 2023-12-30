@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            scroll-snap-type: y mandatory;
+        }
+
+
+
+        nav {
+            display: none;
+            height: 30px;
+        }
+
+
+        section {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-content: center;
+            font-size: 50px;
+            scroll-snap-align: start;
+            scroll-snap-stop: always;
+        }
+
+        section:nth-child(1) {
+            background-color: rgb(251, 255, 35);
+        }
+
+        section:nth-child(2) {
+            background-color: rgb(35, 255, 53);
+        }
+
+        section:nth-child(3) {
+            background-color: rgb(35, 255, 156);
+        }
+
+        section:nth-child(4) {
+            background-color: rgb(35, 138, 255);
+        }
+
+        section:nth-child(5) {
+            background-color: rgb(255, 35, 222);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <nav>Header</nav> -->
+    <div class="container">
+        <section class="child">Page 1</section>
+        <section class="child">Page 2</section>
+        <section class="child">Page 3</section>
+        <section class="child">Page 4</section>
+        <section class="child">Page 5</section>
+    </div>
+   
+</body>
+
+</html>
