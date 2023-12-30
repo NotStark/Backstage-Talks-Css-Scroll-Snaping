@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backstage Talks || Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+
+        <div class="container-texts">
+
+            <img src="./assets/asset 0.png" alt="">
+            <div>
+                <p>
+                    Backstage Talks is a magazine of casual, but in depth dialogues on design and business. Our
+                    decisions shape and influence this complex world—to have a chance to make the right ones, we
+                    need to talk.
+                    <br />
+                    <span>&copy; 2023 <a href="#">Published by Büro Milk</a></span>
+                </p>
+                <a href="#">Privacy Policy</a>
+            </div>
+
+
+
+            <a href="#">info@backstagetalks.com</a>
+
+
+            <ul>
+                <li><a href="#issue7">issue #7</a></li>
+                <li><a href="#issue6">issue #6</a></li>
+                <li><a href="#issue5">issue #5</a></li>
+                <li><a href="#issue4">issue #4</a></li>
+                <li><a href="#issue3">issue #3</a></li>
+                <li><a href="#issue2">issue #2</a></li>
+
+            </ul>
+
+        </div>
+
+
+        <section id="issue7">
+
+            <div class="middle">
+                <img src="./assets/asset 1.png" alt="">
+                <h3><span>Issue #7</span></h3>
+
+                <div>
+                    <h3>BUY HERE <span>(Europe)</span></h3>
+                    <h3>BUY HERE <span>(UK & Overseas)</span></h3>
+                </div>
+                <h5><span>or in</span> selected stores</h5>
+            </div>
+
+        </section>
+        <section id="issue6">
+            <div class="middle">
+                <img src="./assets/asset 2.png" alt="">
+                <h3><span>Issue #6</span></h3>
+
+                <div>
+                    <h3>BUY HERE <span>(Europe)</span></h3>
+                    <h3>BUY HERE <span>(UK & Overseas)</span></h3>
+                </div>
+                <h5><span>or in</span> selected stores</h5>
+            </div>
+        </section>
+
+        <section id="issue5">
+            <div class="middle">
+                <img src="./assets/asset 3.png" alt="">
+                <h3><span>Issue #5</span></h3>
+
+                <div>
+                    <h3>BUY HERE <span>(Europe)</span></h3>
+                    <h3>BUY HERE <span>(UK & Overseas)</span></h3>
+                </div>
+                <h5><span>or in</span> selected stores</h5>
+            </div>
+        </section>
+        <section id="issue4">
+            <div class="middle">
+                <img src="./assets/asset 4.png" alt="">
+                <h3><span>Issue #4</span></h3>
+
+                <div>
+                    <h3>BUY HERE <span>(Europe)</span></h3>
+                    <h3>BUY HERE <span>(UK & Overseas)</span></h3>
+                </div>
+                <h5><span>or in</span> selected stores</h5>
+            </div>
+        </section>
+        <section id="issue3">
+            <div class="middle">
+                <img src="./assets/asset 5.png" alt="">
+                <h3><span>Issue #3</span></h3>
+
+                <div>
+                    <h3>BUY HERE <span>(Europe)</span></h3>
+                    <h3>BUY HERE <span>(UK & Overseas)</span></h3>
+                </div>
+                <h5><span>or in</span> selected stores</h5>
+            </div>
+        </section>
+        <section id="issue2">
+            <div class="middle">
+                <img src="./assets/asset 6.png" alt="">
+                <h3><span>Issue #2</span></h3>
+
+                <div>
+                    <h3>BUY HERE <span>(Europe)</span></h3>
+                    <h3>BUY HERE <span>(UK & Overseas)</span></h3>
+                </div>
+                <h5><span>or in</span> selected stores</h5>
+            </div>
+        </section>
+
+
+    </main>
+
+    <script>
+
+
+        // credit:- https://github.com/Shubham7906/Backstage-Talks/blob/master/script.js
+
+
+        let body = document.querySelector('body');
+        body.style.backgroundColor = '#FF608C';
+
+
+        window.onscroll = function (event) {
+            let scroll = window.pageYOffset;
+            if (scroll < 450) {
+
+                body.style.backgroundColor = '#FF608C';
+            } else if (scroll >= 450 && scroll < 1150) {
+                //orange
+                body.style.backgroundColor = '#FFFFFF';
+            } else if (scroll >= 1150 && scroll < 1900) {
+                // yellow
+                body.style.backgroundColor = '#00C2B6';
+            } else if (scroll >= 1900 && scroll < 2500) {
+                // blue
+                body.style.backgroundColor = '#EE6824';
+            }
+            else if (scroll >= 2500 && scroll < 3100) {
+                // blue
+                body.style.backgroundColor = '#FFBE00';
+            }
+            else {
+                // red
+                body.style.backgroundColor = '#1939BE';
+            }
+        }
+
+    </script>
+</body>
+
+</html>

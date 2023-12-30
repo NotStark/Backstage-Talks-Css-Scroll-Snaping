@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  transition: background-color 0.5s ease-in-out;
+}
+
+main {
+  width: 100%;
+}
+main .container-texts {
+  color: #231F20;
+}
+main .container-texts a {
+  text-decoration: none;
+  color: #231F20;
+}
+main .container-texts img {
+  position: fixed;
+  max-width: 18%;
+  left: 1.5rem;
+  top: 1.5rem;
+}
+main .container-texts div {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  font-weight: 600;
+}
+main .container-texts div p {
+  width: 20%;
+  margin-bottom: 1.5rem;
+}
+main .container-texts div p span {
+  font-size: 0.7vw;
+}
+main .container-texts div a {
+  text-decoration: underline;
+}
+main .container-texts div a:hover {
+  text-decoration: none;
+}
+main .container-texts > a {
+  position: fixed;
+  right: 1.5rem;
+  top: 1.5rem;
+  font-weight: 700;
+}
+main .container-texts > ul {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+}
+main .container-texts > ul li {
+  list-style: none;
+  font-weight: 500;
+}
+@media screen and (max-width: 844px) {
+  main .container-texts {
+    display: none;
+  }
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section .middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+section .middle h3,
+section .middle h5 {
+  color: #fff;
+}
+section .middle img {
+  max-width: 50%;
+}
+section .middle > h3 {
+  font-size: 1vw;
+  margin-bottom: 1.5rem;
+}
+section .middle span {
+  color: #231F20;
+}
+section .middle > h5 {
+  font-size: 0.9vw;
+  margin-top: 1rem;
+}
+section .middle div h3 {
+  font-size: 1vw;
+}
+@media screen and (max-width: 450px) {
+  section .middle img {
+    max-width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  section .middle > h3 {
+    font-size: 3vw;
+  }
+  section .middle > h5 {
+    font-size: 3.5vw;
+  }
+  section .middle div h3 {
+    font-size: 4vw;
+  }
+}/*# sourceMappingURL=style.css.map */
